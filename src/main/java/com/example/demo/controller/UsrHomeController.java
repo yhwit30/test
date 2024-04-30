@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Controller
 public class UsrHomeController {
 
-	@RequestMapping("https://port-0-test-1pgyr2mlvm3ky9e.sel5.cloudtype.app/usr/home/getArticle")
+	@RequestMapping("/")
 	@ResponseBody
 	public Article getArticle() {
 		Article article = new Article(1, "제목1");
@@ -24,7 +24,7 @@ public class UsrHomeController {
 		return article;
 	}
 
-	@RequestMapping("https://port-0-test-1pgyr2mlvm3ky9e.sel5.cloudtype.app/usr/home/getList")
+	@RequestMapping("/usr/home/getList")
 	@ResponseBody
 	public List<String> getList() {
 		List<String> list = new ArrayList<>();
